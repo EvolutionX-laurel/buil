@@ -2559,7 +2559,7 @@ class DynamicPartitionsDifference(object):
       append('remove_all_groups')
 
     if self._build_without_vendor:
-      comment('System-only build, keep original vendor partitions')
+      comment('System-only build, keep original vendor partition')
       # When building without vendor, we do not want to override
       # any partition already existing. In this case, we can only
       # resize, but not remove / create / re-create any other
